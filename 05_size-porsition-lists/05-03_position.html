@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        ul{
+            background-color: red;
+        }
+
+        li {
+            /* display: inline-block; */
+            list-style: circle;
+            list-style-position: inside;
+        }
+
+        header {
+            background-color: steelblue;
+            color: white;
+            height: 7vh;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        p {
+            text-align: center;
+            border: 2px solid #ef9a9a;
+        }
+
+        .container {
+            background-color: cadetblue;
+            height: 150vh;
+            width: 50vw;
+            margin: auto;
+            position: relative;      /* first non static member */
+        }
+
+        .box1 {
+            height: 200px;
+            width: 200px;
+            background-color: #b39ddb;
+            /* position: relative; */
+            /* left: 30vw; */
+            /* position: absolute; */
+            position: fixed;
+            bottom: 0;
+            right: 0;
+
+        }
+
+        .box2 {
+            height: 200px;
+            width: 250px;
+            background-color: #db9d9d;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt, sed? Dolor, culpa esse. Officia
+                voluptatum deleniti soluta adipisci necessitatibus rem architecto. Iste vero eligendi tenetur, optio
+                labore nam aspernatur quas animi saepe nemo minima.</p>
+            <div class="box1">
+                I am a boxxx 1
+            </div>
+            <div class="box2">
+                I am a boxxx 2
+            </div>
+
+            <div>
+                <ul>
+                    <li>apple</li>
+                    <li>banana</li>
+                    <li>oranges</li>
+                </ul>
+            </div>
+    </main>
+
+</body>
+
+</html>

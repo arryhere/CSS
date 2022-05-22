@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex-Box aligning with margin auto</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        header{
+            border: 2px solid red;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            
+        }
+        .box{
+            border: 2px solid red;
+        }
+        #box2{
+            margin-right: auto;
+            margin-left: 10px;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <div class="box" id="box1">box1</div>
+        <div class="box" id="box2">box2</div>
+        <div class="box" id="box3">box3</div>
+    </header>
+</body>
+</html>

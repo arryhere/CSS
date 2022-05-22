@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation menu</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+            font-family: sans-serif;
+            text-decoration: none;
+            /* border: 2px solid red; */
+        }
+
+        header {
+            /* border: 2px solid red; */
+            background-color: slategray;
+            height: 65px;
+            width: 100vw;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        nav{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            /* border: 2px solid red; */
+            width: 450px;
+        }
+        nav ul{
+            display: flex;
+            flex-direction: row;
+            /* border: 2px solid red; */
+            
+        }
+        nav ul li{
+            padding: 0 10px;
+            width: 90px;
+            /* border: 2px solid red; */
+        }
+        nav ul li a{
+            color: white;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .class1{
+            /* border: 2px solid blue; */
+        }
+        .logo{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            width: 200px;
+            margin-left: 5px
+            
+        }
+        .logo img{
+            height: 30px;
+            border-radius: 50px;
+            cursor: pointer;
+        }
+        .logoname {
+            padding: 0 10px;
+            color: white;
+            cursor: pointer;
+        }
+        .logoname:hover{
+            font-weight: bolder;
+        }
+
+        .sign{
+            margin-right: 5px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            width: 200px;
+        }
+        .sign div{
+            padding: 0 5px;
+        }
+        button{
+            border-radius: 30px;
+            padding: 10px;
+            border: 0px solid white;
+            cursor: pointer;
+        }
+
+        button:hover{
+            background-color: rgb(59, 59, 59);
+            color: white;
+        }
+        nav ul li:hover{
+            font-weight: bolder;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="class1 logo">
+            <img src="https://wilcity.com/wp-content/uploads/2018/12/sample-logo-design-png-3-2.png" alt="logo">
+            <div class="logoname">Lorem</div>
+        </div>
+
+        <nav class="class1 navbar">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Services</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact us</a></li>
+            </ul>
+        </nav>
+
+        <div class="class1 sign">
+            <div><button id="signup">Sign Up</button></div>
+            <div><button id="signin">Sign In</button></div>
+            
+            
+        </div>
+    </header>
+</body>
+
+</html>
